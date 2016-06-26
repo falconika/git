@@ -1,111 +1,109 @@
 <!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title> Git;fonctionnement et commande de base </title>
-  <link rel="stylesheet" href="style.css">
- </head>
+  <html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <title> Git;fonctionnement et commande de base </title>
+      <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-  <img width="30%" src="http://www.codefuel.co.uk/wp-content/uploads/2013/06/git-logo-wide.jpg " alt="Logo" />
-    <pre>
-    Git est un programme permettant de gérer les différentes versions d'un projet (fichier)
-    </pre>
-    <p>
-Git permet de sauvegarder chaque changement dans le fichier ou projet (versionning), accompagné par un commentaire (commit) sur le changement
-    </p>
-   <h2>Voici les principales commandes</h2>
-    <table >
-    <tr>
-      <td>
-        $ git init
-      </td>
-      <td>
-      Crée un dépôt local à partir du nom spécifié ( il faut être dans le répertoire )
-      </td>
-    </tr>
-    <td>
+    <body>
+      <img width="30%" src="http://www.codefuel.co.uk/wp-content/uploads/2013/06/git-logo-wide.jpg " alt="Logo" />
+        <pre>
+          Git est un programme permettant de gérer les différentes versions d'un projet (fichier)
+        </pre>
+        <p>Git permet de sauvegarder chaque changement dans le fichier ou projet (versionning),<br>
+      accompagné par un commentaire (commit) sur le changement </p>
+      <h2>Voici les principales commandes</h2>
+      <table >
+        <tr>
+          <td>$ git init
+          </td>
+          <td>
+            Crée un dépôt local à partir du nom spécifié ( il faut être dans le répertoire )
+          </td>
+        </tr>
+        <td>
       $ git status ( et pas git statut !!!)
-    </td>
-    <td>
+        </td>
+        <td>
       Liste tous les nouveaux fichiers et les fichiers modifiés à commiter
       en cas d'erreur un message indique la marche à suivre
-    </td>
-    <tr>
-      <td>
+        </td>
+      <tr>
+        <td>
         $ git add nomfichier
-      </td>
-      <td>
+        </td>
+        <td>
         Ajoute un instantané du fichier, en préparation pour le suivi de version
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
       $ git config --global user.name "[nom]"
-      </td>
-      <td>
+        </td>
+        <td>
         Définit le nom que vous voulez associer à toutes vos opérations de
         commit
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git config --global user.email "[adresse email]"
-      </td>
-      <td>
+        </td>
+        <td>
         Définit l'email que vous voulez associer
         à toutes vos opérations de commit
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git config --global color.ui auto
-      </td>
-      <td>
+        </td>
+        <td>
         Active la colorisation de la sortie en ligne de commande
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git commit -m "[message descriptif]"
-      </td>
-      <td>
+        </td>
+        <td>
         Enregistre des instantanés de fichiers de façon permanente dans
 l'historique des versions
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git checkout [nom-de-branche]
-      </td>
-      <td>
+        </td>
+        <td>
         Bascule sur la branche spécifiée et met à jour le répertoire de travail
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git merge [nom-de-branche]
-      </td>
-      <td>
+        </td>
+        <td>
         Combine dans la branche courante l'historique de la branche spécifiée
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git rm [fichier]
-      </td>
-      <td>
+        </td>
+        <td>
         Supprime le fichier du répertoire de travail et met à jour l'index
-      </td>
-    </tr>
-    <tr>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
         $ git rm --cached [fichier]
-      </td>
-      <td>
+        </td>
+        <td>
         Supprime le fichier du système de suivi de version mais le préserve
         localement
-      </td>
+        </td>
       <tr>
         <td>
           $ git mv [fichier-nom] [fichier-nouveau-nom]
@@ -146,6 +144,9 @@ l'historique des versions
         <td>
           Récupère tout l'historique du dépôt nommé et incorpore les modifications
         </td>
+      </tr>
+
+
       </tr>
     </table>
 </body>
