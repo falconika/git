@@ -1,0 +1,154 @@
+<!doctype html>
+  <html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <title> Git;fonctionnement et commande de base </title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="body">
+      <img class="banniere" width="30%" src="24-07_git_version_control_ld_img.png" alt="Logo" />
+        <pre>
+          Git est un programme permettant de gérer les différentes versions d'un projet (fichier)
+        </pre>
+        <p>Git permet de sauvegarder chaque changement dans du projet (versionning),<br>
+      accompagné par un commentaire (commit) sur le changement </p>
+      <h2>Voici les principales commandes</h2>
+      <table >
+        <tr>
+          <td>$ git init
+          </td>
+          <td>
+            Crée un dépôt local à partir du nom spécifié ( il faut être dans le répertoire )
+          </td>
+        </tr>
+        <td>
+      $ git status ( et pas git statut !!!)
+        </td>
+        <td>
+      Liste tous les nouveaux fichiers et les fichiers modifiés à commiter
+      en cas d'erreur un message indique la marche à suivre
+        </td>
+      <tr>
+        <td>
+        $ git add nomfichier
+        </td>
+        <td>
+        Ajoute un instantané du fichier, en préparation pour le suivi de version
+        </td>
+      </tr>
+      <tr>
+        <td>
+      $ git config --global user.name "[nom]"
+        </td>
+        <td>
+        Définit le nom que vous voulez associer à toutes vos opérations de
+        commit
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git config --global user.email "[adresse email]"
+        </td>
+        <td>
+        Définit l'email que vous voulez associer
+        à toutes vos opérations de commit
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git config --global color.ui auto
+        </td>
+        <td>
+        Active la colorisation de la sortie en ligne de commande
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git commit -m "[message descriptif]"
+        </td>
+        <td>
+        Enregistre des instantanés de fichiers de façon permanente dans
+l'historique des versions
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git checkout [nom-de-branche]
+        </td>
+        <td>
+        Bascule sur la branche spécifiée et met à jour le répertoire de travail
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git merge [nom-de-branche]
+        </td>
+        <td>
+        Combine dans la branche courante l'historique de la branche spécifiée
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git rm [fichier]
+        </td>
+        <td>
+        Supprime le fichier du répertoire de travail et met à jour l'index
+        </td>
+      </tr>
+      <tr>
+        <td>
+        $ git rm --cached [fichier]
+        </td>
+        <td>
+        Supprime le fichier du système de suivi de version mais le préserve
+        localement
+        </td>
+      <tr>
+        <td>
+          $ git mv [fichier-nom] [fichier-nouveau-nom]
+        </td>
+        <td>
+          Renomme le fichier et prépare le changement pour un commit
+        </td>
+      </tr>
+      <tr>
+        <td>
+          $ git log
+        </td>
+        <td>
+          Montre l'historique des versions pour la branche courante
+        </td>
+      </tr>
+      <tr>
+        <td>
+          $ git reset [commit]
+        </td>
+        <td>
+          Annule tous les commits après `[commit]`, en conservant les
+          modifications localement
+        </td>
+      </tr>
+      <tr>
+        <td>
+          $ git push [alias] [branche]
+        </td>
+        <td>
+          Envoie tous les commits de la branche locale vers GitHub(=alias)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          $ git pull
+        </td>
+        <td>
+          Récupère tout l'historique du dépôt nommé et incorpore les modifications
+        </td>
+      </tr>
+
+
+      </tr>
+    </table>
+</body>
+
+</html>

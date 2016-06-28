@@ -1,0 +1,55 @@
+:root
+{
+background-color: #0099FF;
+}
+.body
+{max-width: 900px;
+margin: auto;}
+.banniere
+{background: url('fonctionnementgit.gif') repeat;
+margin: auto;
+width: auto;
+display: flex;
+justify-content: space-between;;
+align-items: flex-end;;}
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('fonts/helsinki-webfont.eot');
+    src: url('fonts/helsinki-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helsinki-webfont.woff') format('woff'),
+         url('fonts/helsinki-webfont.ttf') format('truetype'),
+         url('fonts/helsinki-webfont.svg#helsinkiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+table
+{width: 80%; height: 80%;    }
+
+th
+{
+color: green;
+font-size: 3em;
+background-color:black;
+}
+
+table td:nth-child(2n+1)
+{
+background-color: white;
+}
+table td:nth-child(2n)
+{
+background-color: #cc6600 ;
+}
+
+tr
+{color:yellow ;
+font-size: 2 em;
+font-family: 'helsinkiregular',"Times New Roman", Times, serif;
+text-align: justify;
+}
+table td:nth-child(2n+1)
+{color: black}
+.banniere
+{
+
+}
